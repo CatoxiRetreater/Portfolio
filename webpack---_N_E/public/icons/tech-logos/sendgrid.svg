@@ -1,0 +1,30 @@
+var _path, _path2, _path3, _path4, _path5;
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var SvgSendgrid = function SvgSendgrid(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    viewBox: "0 0 256 256",
+    xmlns: "http://www.w3.org/2000/svg",
+    preserveAspectRatio: "xMidYMid"
+  }, props), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "M256 0v170.667h-85.333v85.33H.002v-85.331H0V85.332h85.333V0H256Z",
+    fill: "#9DD6E3"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    fill: "#3F72AB",
+    d: "M.002 255.996h85.333v-85.333H.002z"
+  })), _path3 || (_path3 = /*#__PURE__*/React.createElement("path", {
+    fill: "#00A9D1",
+    d: "M170.667 170.667H256V85.33h-85.333zM85.333 85.333h85.334V0H85.333z"
+  })), _path4 || (_path4 = /*#__PURE__*/React.createElement("path", {
+    fill: "#2191C4",
+    d: "M85.333 170.665h85.334V85.33H85.333z"
+  })), _path5 || (_path5 = /*#__PURE__*/React.createElement("path", {
+    fill: "#3F72AB",
+    d: "M170.667 85.333H256V0h-85.333z"
+  })));
+};
+
+export default SvgSendgrid;

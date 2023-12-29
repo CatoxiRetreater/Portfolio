@@ -1,0 +1,26 @@
+var _circle, _path, _path2;
+
+function _extends() { _extends = Object.assign ? Object.assign.bind() : function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; }; return _extends.apply(this, arguments); }
+
+import * as React from "react";
+
+var SvgEmmet = function SvgEmmet(props) {
+  return /*#__PURE__*/React.createElement("svg", _extends({
+    viewBox: "0 0 256 256",
+    xmlns: "http://www.w3.org/2000/svg",
+    preserveAspectRatio: "xMidYMid"
+  }, props), _circle || (_circle = /*#__PURE__*/React.createElement("circle", {
+    fill: "#1C1C20",
+    cx: 127.555,
+    cy: 128.184,
+    r: 127.555
+  })), _path || (_path = /*#__PURE__*/React.createElement("path", {
+    d: "m178.496 124.737-14.205-14.205 7.306-30.035-30.441 6.9-13.8-13.8 68.187-17.047-17.047 68.187Z",
+    fill: "#BAFFA9"
+  })), _path2 || (_path2 = /*#__PURE__*/React.createElement("path", {
+    d: "M154.956 218.901 33.192 97.138 101.38 80.09l13.8 13.8-48.706 12.176 27.6 27.6 32.064-7.712-8.117 31.658 27.6 27.6 12.176-48.705 14.205 14.206-17.046 68.187Z",
+    fill: "#7ACB16"
+  })));
+};
+
+export default SvgEmmet;
