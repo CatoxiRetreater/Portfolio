@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dbbbd0; /* Initial background color */
+    animation: colorChange 30s infinite linear;
+    font-family: 'Georgia', serif;
+    overflow-x: hidden;
+    /* Add background animation */
+    background-image: url('starry-night.gif'); /* Replace with your desired animation */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: #dbbbd0;
+    }
+    25% {
+        background-color: #bd98cb;
+    }
+    50% {
+        background-color: #9dd0d9;
+    }
+    75% {
+        background-color: #b0d9ae;
+    }
+    100% {
+        background-color: #dbbbd0;
+    }
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.text-line {
+    white-space: pre-wrap;
+    opacity: 0;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.text-line.visible {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+    transition-delay: 0.2s;
+}
+
+.text-line.hidden {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.9);
+    transition-delay: 0s;
+}
+
+/* Add a custom font */
+@font-face {
+    font-family: 'RomanticFont';
+    src: url('romantic-font.ttf'); /* Replace with your font file */
+}
+
+.text-line {
+    font-family: 'RomanticFont', Georgia, serif;
+}
